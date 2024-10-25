@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Creative Commons Global Summit 2015</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>CC Global Summit 2015</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Sponsor</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#" class="cc-campaign">CC Campaign</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" position: relative>
+        <h2>"Hello! Sharing world"</h2>
+        <h1>CREATIVE COMMONS <br> GLOBAL SUMMIT 2015</h1>
+        <p>A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.</p>
+
+        <div class="details-wrapper">
+            <div class="details">
+                <p><strong>2015.10.15(THU) ~ 16(FRI)</strong></p>
+                <p>@ National Museum of Korea, Art Center Nabi and more</p>
+            </div>
+        </div>
+        <button id="see-more-btn" class="see-more-btn">See More</button>
+    </section>
+
+
+    <section class="main-program">
+        <h2>Main Program</h2>
+        <div class="program-grid">
+            <div class="program-item">
+                <img src="https://via.placeholder.com/50" alt="Lecture Icon">
+                <h3>Lecture</h3>
+                <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+            </div>
+            <div class="program-item">
+                <img src="https://via.placeholder.com/50" alt="Exhibition Icon">
+                <h3>CC Exhibition</h3>
+                <p>Appreciate various creations applying CC license of artists, organized from Art Center Nabi.</p>
+            </div>
+            <div class="program-item">
+                <img src="https://via.placeholder.com/50" alt="Forum Icon">
+                <h3>Forum</h3>
+                <p>Have the time to share your thoughts and opinions with experts for each topic.</p>
+            </div>
+            <div class="program-item active">
+                <img src="https://via.placeholder.com/50" alt="Workshop Icon">
+                <h3>Workshop</h3>
+                <p>Try creating your own work using open-source license rather than just watching at it.</p>
+            </div>
+            <div class="program-item">
+                <img src="https://via.placeholder.com/50" alt="CC Ignite Icon">
+                <h3>CC Ignite</h3>
+                <p>Get opportunities to network with CC affiliates around the world, also after the summit.</p>
+            </div>
+        </div>
+        <a href="#" class="program-link">SEE THE WHOLE PROGRAM</a>
+    </section>
+
+    <section class="featured-speakers" id="featured-speakers">
+        <h2>Featured Speakers</h2>
+        <div class="speakers-grid" id="speakers-grid">
+            <!-- JavaScript will dynamically insert speaker items here -->
+        </div>
+    </section>
+
+    <div class="partner-section">
+        <h2>Partner</h2>
+        <div class="partners">
+            <img src="mozilla.jpeg" alt="Mozilla">
+            <img src="google.webp" alt="Google">
+            <img src="naver.png" alt="Naver">
+            <img src="Daumkakao.jpg" alt="Daumkakao">
+            <img src="airbnb.png" alt="Airbnb">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <img src="https://via.placeholder.com/50?text=CC" alt="Creative Commons Logo">
+        <p>2015 Creative Commons Korea. Some Rights Reserved.</p>
+        <p>
+            달리 명시하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0
+            대한민국 라이선스에 따라 이용할 수 있습니다. 자세한 이용가능 내용과 허락조건은
+            <a href="http://creativecommons.org/licenses/by/2.0/kr">http://creativecommons.org/licenses/by/2.0/kr</a>
+            를 보세요.
+        </p>
+    </div>
+
+   
+
+    <!-- JavaScript for Dynamic "Featured Speakers" Section -->
+    <script>
+        // Array of speaker data
+        const speakers = [
+            {
+                name: "Yochai Benkler",
+                title: "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+                description: "Benkler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006.",
+                imageUrl: "e63eb0bfe2f86f44aeebac2e6a786eb6.jpg"
+            },
+            {
+                name: "Kilnam Chon",
+                title: "",
+                description: "Kilnam Chon helped bring the Internet to Asia and is an outspoken advocate for the open web and digital commons.",
+                imageUrl: "james-stewart-675177_640.jpg"
+            },
+            {
+                name: "SohYeong Noh",
+                title: "Director of Art Centre Nabi and a board member of CC Korea",
+                description: "As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration.",
+                imageUrl: "some-say-its-not-necessary-to-be-a-good-actor-to-be-a-star-v0-gm3jrpt5ftkd1.webp"
+            },
+            {
+                name: "Julia Leda",
+                title: "President of Young Pirates of Europe",
+                description: "European integration, political democracy and participation of youth through online as her major concern.",
+                imageUrl: "sub-buzz-8670-1638560995-10.jpg"
+            },
+            {
+                name: "Lila Tretikov",
+                title: "Executive Director of the Wikimedia Foundation",
+                description: "Lila Tretikov is the Executive Director of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia.",
+                imageUrl: "us-actor-bruce-willis-poses-260nw-317285051.webp"
+            },
+            {
+                name: "Ryan Merkley",
+                title: "CEO of Creative Commons, ex COO of the Mozilla Foundation",
+                description: "Ryan had been leading open-source projects in one of the most renowned foundations around the world.",
+                imageUrl: "28xp-perry-articleLarge.webp"
+            }
+        ];
+
+        // Function to dynamically create the speakers section
+        function loadSpeakers() {
+            const speakersGrid = document.getElementById('speakers-grid');
+
+            // Loop through each speaker and create HTML for them
+            speakers.forEach(speaker => {
+                // Create a container div for each speaker
+                const speakerItem = document.createElement('div');
+                speakerItem.className = 'speaker-item';
+
+                // Add the inner HTML with speaker details
+                speakerItem.innerHTML = `
+                    <img src="${speaker.imageUrl}" alt="${speaker.name}">
+                    <div class="speaker-info">
+                        <h3>${speaker.name}</h3>
+                        <p class="title">${speaker.title}</p>
+                        <p>${speaker.description}</p>
+                    </div>
+                `;
+
+                // Append the speaker to the speakers grid
+                speakersGrid.appendChild(speakerItem);
+            });
+        }
+
+        // Load speakers when the page content is loaded
+        document.addEventListener('DOMContentLoaded', loadSpeakers);
+        document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded and parsed");
+    
+    const seeMoreBtn = document.getElementById('see-more-btn');
+    if (seeMoreBtn) {
+        console.log("Button found");
+        seeMoreBtn.addEventListener('click', function () {
+            const featuredSpeakersSection = document.getElementById('featured-speakers');
+            if (featuredSpeakersSection) {
+                console.log("Section found");
+                featuredSpeakersSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error("Section not found");
+            }
+        });
+    } else {
+        console.error("Button not found");
+    }
+});
+    </script>
+
+</body>
+
+</html>
